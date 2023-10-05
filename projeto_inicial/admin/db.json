@@ -28,6 +28,12 @@
       "nome": "asd",
       "email": "asd@gmail.com",
       "id": 7
+    },
+    {
+      "nome": "fe",
+      "email": "fe",
+      "id": 8
     }
-  ]
+  ],
+  "products": []
 }

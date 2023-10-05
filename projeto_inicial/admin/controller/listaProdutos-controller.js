@@ -25,7 +25,7 @@ const criaNovaLinha = (nome, email, id) => {
 }
 
 // Seleciona a tabela no documento HTML usando um atributo de dados.
-const tabela = document.querySelector('[data-tabela]');
+const tabela = document.querySelector('[data-produto-tabela]');
 
 tabela.addEventListener("click", (evento) => {
    let ehBotaoDeletar = evento.target.className == "botao-simples botao-simples-excluir";
@@ -44,6 +44,6 @@ clienteService.listaClientes()
 .then(data => {
    // Para cada cliente retornado, cria e adiciona uma nova linha na tabela.
    data.forEach(element => {
-      tabela.appendChild(criaNovaLinha(element.nome, element.email, element.id));
+      tabela.appendChild(criaNovaLinha(element.produto, element.preco, element.descricao, element.id));
    });
 });
